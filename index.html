@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <p title="mumumumumumu">hello!!!!!!!!!!!!</p>
+
+<div id="ct" class="demo">
+        {{m}}
+        <br/>
+        Счётчик: {{ lolo+1 }}
+</div>
+
+<div id="bind-attribute">
+  <span v-bind:title="message">
+    Наведи на меня курсор на пару секунд, чтобы
+    увидеть динамически связанное значение title!
+  </span>
+</div>
+<!--Директива v-on -->
+<div id="eh"> 
+<p> {{ms}} </p>
+<button v-on:click="rms"> Перевернуть </button>
+</div>
+
+<!--Директива v-model -->
+<div id="twb"> 
+  <p> {{ms}} </p>
+  <input v-model="ms"/> 
+  </div>
+<br/>
+
+<!--Директива v-if -->
+<div id="cr"> 
+  <span v-if="seen"> Сейчас меня видно 1</span>
+  <br/>
+  <span v-if="false"> Сейчас меня видно 2</span>
+</div>
+
+
+<!--Директива v-for -->
+<div id="lr"> 
+<lo>
+  <li v-for="todo in todos"> {{todo.text}} </li>  
+</lo>   
+</div>
+<br/>
+
+<!--Директива 2 v-for -->
+<div id="lr2"> 
+  <lo>
+    <li v-for="i in todos"> {{i.text}} </li>  
+  </lo>   
+  </div>
+
+  <br/>
+<!--Директива 3 v-for -->
+<div id="lr3"> 
+  <lo>
+    <li v-for="i in M"> {{i}} </li>  
+  </lo>   
+  </div>
+
+<script src="/js/vue.global.js"> </script>
+
+<script src="/js/main.js"> </script>
+
+</body>
+</html>
